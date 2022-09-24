@@ -48,12 +48,12 @@ if [ $(id -u) -eq 0 ]; then
     # Switch user, activate our prepared venv and lauch crafty
     args="$@"
     echo "\033[36mWrapper | \033[32m🚀 Launching crafty with [\033[34m$args\033[32m]"
-    exec sudo -u crafty bash -c "source ./.venv/bin/activate && exec python3 main.py $args"
+    exec sudo -u crafty bash -c "source ./.venv/bin/activate && exec nice --adjustment=-20 python3 main.py $args"
 else
     # Activate our prepared venv
     echo "\033[36mWrapper | \033[32m🚀 Non-root host detected, using normal exec"
     . ./.venv/bin/activate
     # Use exec as our perms are already correct
     # This is likely if using Kubernetes/OpenShift etc
-    exec python3 main.py $@
+    exec nice --adjustment=-20 python3 main.py $@
 fi
