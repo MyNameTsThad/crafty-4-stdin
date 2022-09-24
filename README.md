@@ -6,7 +6,7 @@
 [![Code Quality(temp-hardcoded)](https://img.shields.io/badge/code%20quality-10-brightgreen)](https://gitlab.com/crafty-controller/crafty-4)
 [![Build Status](https://gitlab.com/crafty-controller/crafty-4/badges/master/pipeline.svg)](https://gitlab.com/crafty-controller/crafty-4/-/commits/master)
 
-# Crafty Controller 4.0.14-beta
+# Crafty Controller 4.0.14-beta-iwant2tryhard
 > Python based Control Panel for your Minecraft Server
 
 ## What is Crafty Controller?

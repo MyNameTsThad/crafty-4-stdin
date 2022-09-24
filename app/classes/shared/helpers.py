@@ -99,7 +99,7 @@ class Helpers:
                 remote_version = pkg_version.parse(json.loads(response.text)[0]["name"])
 
             # Get local version data from the file and parse the semver
-            local_version = pkg_version.parse(self.get_version_string())
+            local_version = pkg_version.parse(self.get_version_string().removesuffix('-iwant2tryhard'))
 
             if remote_version > local_version:
                 return remote_version
@@ -449,7 +449,7 @@ class Helpers:
         meta = version_data.get("meta", "?")
 
         # set some defaults if we don't get version_data from our helper
-        version = f"{major}.{minor}.{sub}-{meta}"
+        version = f"{major}.{minor}.{sub}-{meta}-iwant2tryhard"
         return str(version)
 
     def encode_pass(self, password):
