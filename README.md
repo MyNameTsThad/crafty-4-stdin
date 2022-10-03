@@ -1,3 +1,6 @@
+# NOTE: All of the changes here have made it in some way to the main branch, so this repo will be archived. Check the Git repo down below instead for the latest version.
+
+
 [![Crafty Logo](app/frontend/static/assets/images/logo_long.svg)](https://craftycontrol.com)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
