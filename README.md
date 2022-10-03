@@ -1,4 +1,4 @@
-# NOTE: All of the changes here have made it in some way to the main branch, so this repo will be archived. Check the Git repo down below instead for the latest version.
+# NOTE: All of the changes here have made it in some way to the main repo, so this repo will be archived. Check the Git repo down below instead for the latest version.
 
 
 [![Crafty Logo](app/frontend/static/assets/images/logo_long.svg)](https://craftycontrol.com)
